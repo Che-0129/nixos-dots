@@ -28,7 +28,7 @@ nmtui
 ## パーティション切り
 ```bash
 sgdisk -Z /dev/nvme0n1
-sgdisk -n 1::+1G -n 2::-80G -t 1:ef00 -t 2:8304 /dev/nvme0n1
+sgdisk -n 1::+1G -n 2::-64G -t 1:ef00 -t 2:8304 /dev/nvme0n1
 ```
 
 ## フォーマット
