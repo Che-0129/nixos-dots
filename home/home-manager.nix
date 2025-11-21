@@ -27,7 +27,7 @@
             paper = "ja-JP.utf8";
             telephone = "ja-JP.utf8";
             time = "ja-JP.utf8";
-        }
+        };
         file = {
             ".config/libfm".source = ./configs/libfm;
             ".config/mozc/config1.db".source = ./configs/mozc/config1.db;
