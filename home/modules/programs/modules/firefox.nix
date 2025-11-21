@@ -5,10 +5,10 @@
         enable = true;
         languagePacks = [ "ja" ];
         profiles.che = {
-            bookmarks = {};
             settings = {
-                "sidebar.verticalTabs" = true;
                 "browser.tabs.closeWindowWithLastTab" = false;
+                "font.name.sans-serif.ja" = "Noto Sans CJK JP";
+                "sidebar.verticalTabs" = true;
                 "ui.key.menuAccessKeyFocuses" = false;
             };
         };
