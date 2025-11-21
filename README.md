@@ -12,18 +12,7 @@ $ sudo -i
 
 ## Wi-Fiに接続
 ```
-# systemctl start wpa_supplicant
-# wpa_cli
-
-> add_network
-0
-> set_network 0 ssid "myhomenetwork"
-OK
-> set_network 0 psk "mypassword"
-OK
-> enable_network 0
-OK
-> quit
+# nmtui
 ```
 
 ## パーティション切り
