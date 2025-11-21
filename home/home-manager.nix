@@ -15,7 +15,7 @@
         homeDirectory = "/home/che";
         stateVersion = "25.11";
         language = {
-            adress = "ja-JP.utf8";
+            address = "ja-JP.utf8";
             base = "ja-JP.utf8";
             collate = "ja-JP.utf8";
             ctype = "ja-JP.utf8";
