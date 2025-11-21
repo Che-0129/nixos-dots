@@ -6,6 +6,7 @@
         languagePacks = [ "ja" ];
         profiles.che = {
             settings = {
+                "browser.toolbars.bookmarks.visibility" = "never";
                 "browser.tabs.closeWindowWithLastTab" = false;
                 "font.name.sans-serif.ja" = "Noto Sans CJK JP";
                 "sidebar.verticalTabs" = true;
