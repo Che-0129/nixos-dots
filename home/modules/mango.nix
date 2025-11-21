@@ -18,8 +18,8 @@ fadeout_begin_opacity=0.5
 animation_duration_close=300
 
 #Scroller Layout
-scroller_structs=10
-scroller_default_proportion=0.45
+scroller_structs=15
+scroller_default_proportion=0.5
 
 #Master-Stack Layout
 new_is_master=0
