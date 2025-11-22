@@ -6,8 +6,5 @@
         ./modules/swayidle.nix
     ];
 
-    services = {
-        cliphist.enable = true;
-        lxqt-policykit-agent.enable = true;
-    };
+    services.cliphist.enable = true;
 }

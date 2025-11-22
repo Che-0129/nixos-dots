@@ -10,6 +10,7 @@
         gimp
         git
         gnumake
+        lxsession
         nodejs
         payload-dumper-go
         pcmanfm
