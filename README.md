@@ -54,7 +54,6 @@ vim /mnt/etc/nixos/configuration.nix
 ```
 ```nix
 # 以下のように編集または追記
-networking.hostName = "NixOS";
 console.keyMap = "jp106";
 users.users.che = {
   isNormalUser = true;
@@ -65,7 +64,6 @@ environment.systemPackages = with pkgs; [
   git
   neovim
 ];
-nix.settings.experimental-features = [ "nix-command" "flakes" ];
 ```
 
 ## インストール
