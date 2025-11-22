@@ -16,5 +16,5 @@
                 "intl.locale.requested" = "ja";
             };
         };
-    }
+    };
 }
