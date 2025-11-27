@@ -112,7 +112,8 @@ uwsm app -- swaybg -i ~/.nixos-dots/wallpaper/nix-wallpaper-simple-blue.png &
 uwsm app -- waybar &
 uwsm app -- fcitx5 &
 uwsm app -- wl-paste -t text -w cliphist store &
-uwsm app -- lxsession
+uwsm app -- lxsession &
+uwsm app -- sway-audio-idle-inhibit
         '';
     };
 }

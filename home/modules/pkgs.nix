@@ -19,6 +19,7 @@
         qmk-udev-rules
         rustup
         swaybg
+        sway-audio-idle-inhibit
         telegram-desktop
         trash-cli
         unzip
