@@ -103,6 +103,7 @@ keymode=power_menu
 bind=NONE,Q,setkeymode,default
 bind=NONE,esc,setkeymode,default
 bind=NONE,R,spawn,systemctl reboot
+bind=NONE,W,spawn,systemctl reboot --boot-loader-entry auto-windows
 bind=NONE,S,spawn,systemctl suspend
 bind=NONE,S,setkeymode,default
 bind=NONE,P,spawn,systemctl poweroff
