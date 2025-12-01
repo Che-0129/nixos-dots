@@ -3,7 +3,6 @@
 {
     boot = {
         consoleLogLevel = 3;
-        initrd.systemd.enable = true;
         kernelPackages = pkgs.linuxPackages_latest;
         loader = {
             systemd-boot.enable = true;

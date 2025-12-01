@@ -6,7 +6,6 @@
         libinput.enable = true;
         playerctld.enable = true;
         udisks2.enable = true;
-        userborn.enable = true;
         pipewire = {
             enable = true;
             pulse.enable = true;

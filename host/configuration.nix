@@ -44,9 +44,5 @@
     };
 
     nixpkgs.config.allowUnfree = true;
-    system = {
-        nixos-init.enable = true;
-        etc.overlay.enable = true;
-        stateVersion = "25.11";
-    };
+    system.stateVersion = "25.11";
 }
