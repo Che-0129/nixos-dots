@@ -56,10 +56,7 @@ borderpx=2
 focuscolor=0x5294e2ff
 
 #Layout
-tagrule=id:1,layout_name:vertical_spiral
-tagrule=id:2,layout_name:vertical_spiral
-tagrule=id:3,layout_name:vertical_spiral
-tagrule=id:4,layout_name:vertical_spiral
+tagrule=id:1,layout_name:tile
 
 #Key Bindings
 bind=SUPER,Q,killclient
