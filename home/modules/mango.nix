@@ -6,6 +6,13 @@
     wayland.windowManager.mango = {
         enable = true;
         settings = ''
+exec-once=uwsm app -- swaybg -i ~/.nixos-dots/wallpaper/nix-wallpaper-simple-blue.png
+exec-once=uwsm app -- waybar
+exec-once=uwsm app -- fcitx5
+exec-once=uwsm app -- wl-paste -t text -w cliphist store
+exec-once=uwsm app -- lxsession
+exec-once=uwsm app -- sway-audio-idle-inhibit
+
 #Window effect
 border_radius=8
 unfocused_opacity=0.9
@@ -107,14 +114,6 @@ bind=NONE,W,spawn,systemctl reboot --boot-loader-entry auto-windows
 bind=NONE,S,spawn,systemctl suspend
 bind=NONE,S,setkeymode,default
 bind=NONE,P,spawn,systemctl poweroff
-        '';
-        autostart_sh = ''
-uwsm app -- swaybg -i ~/.nixos-dots/wallpaper/nix-wallpaper-simple-blue.png &
-uwsm app -- waybar &
-uwsm app -- fcitx5 &
-uwsm app -- wl-paste -t text -w cliphist store &
-uwsm app -- lxsession &
-uwsm app -- sway-audio-idle-inhibit
         '';
     };
 }
