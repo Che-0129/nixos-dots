@@ -1,4 +1,4 @@
-{ inputs, lib, pkgs, ... }:
+{ inputs, ... }:
 
 {
     imports = [ inputs.mango.hmModules.mango ];
@@ -6,12 +6,7 @@
     wayland.windowManager.mango = {
         enable = true;
         settings = ''
-exec-once=uwsm app -- ${lib.getExe pkgs.swaybg} -i ~/.nixos-dots/wallpaper/nix-wallpaper-simple-blue.png
-exec-once=uwsm app -- ${lib.getExe pkgs.waybar}
-exec-once=uwsm app -- ${lib.getExe pkgs.fcitx5}
-exec-once=uwsm app -- ${lib.getExe' pkgs.wl-clipboard "wl-paste"} -t text -w cliphist store
-exec-once=uwsm app -- ${lib.getExe pkgs.lxsession}
-exec-once=uwsm app -- ${lib.getExe pkgs.sway-audio-idle-inhibit}
+exec-once=~/.config/mango/autostart.sh
 
 #Window effect
 border_radius=8
@@ -61,10 +56,10 @@ borderpx=2
 focuscolor=0x5294e2ff
 
 #Layout
-tagrule=id:1,layout_name:tile
-tagrule=id:2,layout_name:tile
-tagrule=id:3,layout_name:tile
-tagrule=id:4,layout_name:tile
+tagrule=id:1,layout_name:vertical_spiral
+tagrule=id:2,layout_name:vertical_spiral
+tagrule=id:3,layout_name:vertical_spiral
+tagrule=id:4,layout_name:vertical_spiral
 
 #Key Bindings
 bind=SUPER,Q,killclient
@@ -114,6 +109,14 @@ bind=NONE,W,spawn,systemctl reboot --boot-loader-entry auto-windows
 bind=NONE,S,spawn,systemctl suspend
 bind=NONE,S,setkeymode,default
 bind=NONE,P,spawn,systemctl poweroff
+        '';
+        autostart_sh = ''
+uwsm app -- swaybg -i ~/.nixos-dots/wallpaper/nix-wallpaper-simple-blue.png &
+uwsm app -- waybar &
+uwsm app -- fcitx5 &
+uwsm app -- wl-paste -t text -w cliphist store &
+uwsm app -- lxsession &
+uwsm app -- sway-audio-idle-inhibit
         '';
     };
 }
