@@ -22,8 +22,9 @@
             termguicolors = true;
             guicursor = "i:ver100-blinkon500-blinkoff500";
         };
-        colorschemes.onenord.enable = true;
+        colorschemes = "onenord";
         plugins = {
+            onenord.enable = true;
             lualine.enable = true;
             smear-cursor = {
                 enable = true;
@@ -40,6 +41,8 @@
             whitespace-nvim.enable = true;
             nvim-colorizer.enable = true;
             which-key.enable = true;
+            blink-pairs.enble = true;
+            blink-indent.enable = true;
         };
     };
 }
