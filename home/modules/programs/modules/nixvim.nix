@@ -24,8 +24,6 @@
         };
         plugins = {
             lualine.enable = true;
-            neoscroll.enable = true;
-            which-key.enable = true;
         };
     };
 }
