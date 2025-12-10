@@ -22,6 +22,6 @@
             termguicolors = true;
             guicursor = "i:ver100-blinkon500-blinkoff500";
         };
-        colorschemes.onenord.enable = true;
+        plugins.onenord.enable = true;
     };
 }
