@@ -20,7 +20,7 @@ fadeout_begin_opacity=0.5
 animation_duration_close=300
 
 #Scroller Layout
-scroller_structs=15
+scroller_structs=10
 scroller_default_proportion=0.5
 
 #Master-Stack Layout
@@ -45,6 +45,7 @@ tap_to_click=0
 trackpad_natural_scrolling=1
 middle_button_emulation=1
 accel_speed=-0.85
+click_method=2
 
 #Appearance
 gappih=2

@@ -52,7 +52,7 @@
         };
         style = ''
 window#waybar {
-    border-radius: 16px;
+    border-radius: 8px;
     border: 2px solid #5294e2
 }
 
