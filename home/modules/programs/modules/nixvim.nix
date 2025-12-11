@@ -1,10 +1,11 @@
-{ inputs, ... }:
+{ inputs, pkgs, ... }:
 
 {
     imports = [ inputs.nixvim.homeModules.nixvim ];
 
     programs.nixvim = {
         enable = true;
+        extraPlugins = [ pkgs.vimPlugins.onenord-nvim ];
         opts = {
             number = true;
             title = true;
@@ -24,7 +25,6 @@
         };
         colorscheme = "onenord";
         plugins = {
-            onenord.enable = true;
             lualine.enable = true;
             smear-cursor = {
                 enable = true;
