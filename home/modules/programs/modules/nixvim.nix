@@ -8,6 +8,11 @@
         extraPlugins = with pkgs.vimPlugins; [
             onenord-nvim
             blink-pairs
+            (pkgs.vimUtils.buildVimPlugin {
+                pname = "modes-nvim";
+                version = "2025-05-27";
+                src = modes-nvim;
+            })
         ];
         opts = {
             number = true;
@@ -71,7 +76,7 @@ vim.api.nvim_create_autocmd({ "InsertLeave", "CmdlineLeave" }, {
                 };
             };
             neoscroll.enable = true;
-            visual-whitespace.enable = true;
+            whitespace-nvim.enable = true;
             colorizer.enable = true;
             illuminate.enable = true;
             which-key.enable = true;

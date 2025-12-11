@@ -16,6 +16,10 @@
             url = "github:nix-community/nixvim";
             inputs.nixpkgs.follows = "nixpkgs";
         };
+        modes-nvim = {
+            url = "github:mvllow/modes.nvim";
+            flake = false;
+        };
     };
 
     outputs =
