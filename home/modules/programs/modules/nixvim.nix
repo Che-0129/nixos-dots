@@ -77,7 +77,7 @@ vim.api.nvim_create_autocmd({ "InsertLeave", "CmdlineLeave" }, {
                 };
             };
             neoscroll.enable = true;
-            whitespace-nvim.enable = true;
+            whitespace.enable = true;
             colorizer.enable = true;
             illuminate.enable = true;
             which-key.enable = true;
