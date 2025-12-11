@@ -8,9 +8,6 @@
         extraPlugins = with pkgs.vimPlugins; [
             onenord-nvim
             blink-pairs
-            blink-indent
-            mason-nvim
-            mason-lspconfig-nvim
         ];
         opts = {
             number = true;
@@ -71,8 +68,8 @@ vim.api.nvim_create_autocmd({ "InsertLeave", "CmdlineLeave" }, {
                 };
             };
             neoscroll.enable = true;
-            visual-whitespace-nvim.enable = true;
-            nvim-colorizer-lua.enable = true;
+            visual-whitespace.enable = true;
+            colorizer.enable = true;
             illuminate.enable = true;
             which-key.enable = true;
             blink-cmp = {
@@ -97,7 +94,6 @@ vim.api.nvim_create_autocmd({ "InsertLeave", "CmdlineLeave" }, {
                     ];
                 };
             };
-            blink-pairs.enable = true;
             blink-indent.enable = true;
             luasnip.enable = true;
             friendly-snippets.enable = true;
