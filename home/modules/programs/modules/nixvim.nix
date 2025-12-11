@@ -10,7 +10,7 @@
             blink-pairs
             (pkgs.vimUtils.buildVimPlugin {
                 pname = "modes-nvim";
-                version = "2025-05-27";
+                version = "0.3.0";
                 src = inputs.modes-nvim;
             })
         ];
@@ -34,6 +34,7 @@
         extraConfigLua = ''
 require("blink.pairs").setup({})
 require("modes").setup({})
+require("whitespace-nvim").setup({})
 
 vim.api.nvim_create_autocmd("VimLeave", {
     pattern = "*",
