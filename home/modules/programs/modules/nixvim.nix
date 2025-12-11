@@ -23,6 +23,33 @@
             termguicolors = true;
             guicursor = "i:ver100-blinkon500-blinkoff500";
         };
+        extraConfigLua = ''
+vim.api.nvim_create_autocmd("VimLeave", {
+    pattern = "*",
+    command = "set guicursor=a:ver25-blinkon500-blinkoff500",
+})
+vim.api.nvim_create_augroup("RetabBeforeWrite", {
+    clear = true
+})
+vim.api.nvim_create_autocmd("BufWritePre", {
+    group = "RetabBeforeWrite",
+    pattern = "*",
+    command = "retab"
+})
+vim.api.nvim_create_autocmd("TextYankPost", {
+    callback = function()
+        local yank_type = vim.v.event.operator
+        if yank_type == "y" then
+            vim.fn.setreg("+", vim.fn.getreg("\""))
+        end
+end,
+})
+vim.api.nvim_create_autocmd({ "InsertLeave", "CmdlineLeave" }, {
+    callback = function()
+        vim.fn.jobstart({ "fcitx5-remote", "-c" }, { detach = true })
+    end
+})
+        '';
         colorscheme = "onenord";
         plugins = {
             lualine.enable = true;
@@ -64,7 +91,7 @@
                     ];
                 };
             };
-            blink-pairs.enble = true;
+            blink-pairs.enable = true;
             blink-indent.enable = true;
             luasnip.enable = true;
             friendly-snippets.enable = true;
