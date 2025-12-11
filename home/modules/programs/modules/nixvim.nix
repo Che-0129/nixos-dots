@@ -5,7 +5,11 @@
 
     programs.nixvim = {
         enable = true;
-        extraPlugins = [ pkgs.vimPlugins.onenord-nvim ];
+        extraPlugins = with pkgs.vimPlugins; [
+            onenord-nvim
+            blink-pairs
+            blink-indent
+        ];
         opts = {
             number = true;
             title = true;
