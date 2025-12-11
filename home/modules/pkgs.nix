@@ -5,6 +5,7 @@
         aria2
         bat
         discord
+        dos2unix
         eza
         gcc
         gimp
