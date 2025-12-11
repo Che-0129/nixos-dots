@@ -69,8 +69,8 @@ vim.api.nvim_create_autocmd({ "InsertLeave", "CmdlineLeave" }, {
                 };
             };
             neoscroll.enable = true;
-            whitespace-nvim.enable = true;
-            nvim-colorizer.enable = true;
+            visual-whitespace-nvim.enable = true;
+            nvim-colorizer-lua.enable = true;
             illuminate.enable = true;
             which-key.enable = true;
             blink-cmp = {
@@ -109,8 +109,6 @@ vim.api.nvim_create_autocmd({ "InsertLeave", "CmdlineLeave" }, {
                     pyright.enable = true;
                 };
             };
-            mason.enable = true;
-            mason-lspconfig.enable = true;
         };
     };
 }
