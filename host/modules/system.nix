@@ -3,6 +3,7 @@
 {
     boot = {
         consoleLogLevel = 3;
+        initrd.systemd.enable = true;
         kernelPackages = pkgs.linuxPackages_latest;
         loader = {
             systemd-boot.enable = true;
@@ -24,6 +25,14 @@
 
     networking = {
         hostName = "NixOS";
-        networkmanager.enable = true;
+        networkmanager = {
+            enable = true;
+            wifi.backend = "iwd";
+        };
+    };
+
+    system = {
+        etc.overlay.enable = true;
+        nixos-init.enable = true;
     };
 }
