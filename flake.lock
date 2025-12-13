@@ -86,11 +86,11 @@
         "scenefx": "scenefx"
       },
       "locked": {
-        "lastModified": 1765621318,
-        "narHash": "sha256-l4fD1BE9TE1yVpD6IUBElfzudADt05AfzLZaREyMtBU=",
+        "lastModified": 1765634050,
+        "narHash": "sha256-licqHOlNAeRSaFrs4LhNfMtZ+wbtGM7UkG9cfcKiw3g=",
         "owner": "DreamMaoMao",
         "repo": "mangowc",
-        "rev": "0f861e79a0d5a53a4a0df3b6226bd1d5452ca37b",
+        "rev": "50b9de6f80d88d528d5afd1b47d82b1dbd98cce6",
         "type": "github"
       },
       "original": {
@@ -169,11 +169,11 @@
         "systems": "systems"
       },
       "locked": {
-        "lastModified": 1765632024,
-        "narHash": "sha256-2fQHSg0UxmWvhHvGaHUnGF+BkUuemFicRKE1mNgBEg8=",
+        "lastModified": 1765642928,
+        "narHash": "sha256-E9GkqwFEsdwvb8oknkqM7sk/PBLWb5pBpRGtG2HRrSI=",
         "owner": "nix-community",
         "repo": "nixvim",
-        "rev": "960ff28d965f6aa78c863131c447d8afcb0b3288",
+        "rev": "74136352cf4156933249c5b83506b334fde2d596",
         "type": "github"
       },
       "original": {
