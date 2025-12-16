@@ -8,6 +8,7 @@
         ./modules/foot.nix
         ./modules/fuzzel.nix
         ./modules/nixvim.nix
+        ./modules/nh.nix
         ./modules/swaylock.nix
         ./modules/thunderbird.nix
         ./modules/waybar.nix
