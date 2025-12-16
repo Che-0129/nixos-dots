@@ -4,6 +4,14 @@
     programs = {
         dconf.enable = true;
         fish.enable = true;
+        nh = {
+            enable = true;
+            clean = {
+                enable = true;
+                extraArgs = "--keep-since 7d --keep 3";
+            };
+            flake = "~/.nixos-dots";
+        };
         steam = {
             enable = true;
             extraCompatPackages = [ pkgs.proton-ge-bin ];
