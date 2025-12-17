@@ -58,7 +58,7 @@ borderpx=2
 focuscolor=0x5294e2ff
 
 # Key Binds
-bind=SUPER+SHIFT,Q,killclient
+bind=SUPER,Q,killclient
 bind=SUPER+CTRL,R,reload_config
 
 bind=SUPER,C,spawn,uwsm app -- foot
