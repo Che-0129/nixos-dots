@@ -2,6 +2,7 @@
 
 {
     programs = {
+        adb.enable = true;
         dconf.enable = true;
         fish.enable = true;
         steam = {

@@ -16,7 +16,6 @@
         nodejs
         payload-dumper-go
         pcmanfm
-        picotool
         qmk
         qmk-udev-rules
         rustup
