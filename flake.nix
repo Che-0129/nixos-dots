@@ -27,7 +27,7 @@
             system = "x86_64-linux";
             modules = [
                 ./host/configuration.nix
-                inputs.home-manager.nixosModules.home-manager
+                home-manager.nixosModules.home-manager
                 {
                     home-manager = {
                         useGlobalPkgs = true;
