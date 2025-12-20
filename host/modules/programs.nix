@@ -15,7 +15,7 @@
                 mango = {
                     prettyName = "Mango";
                     comment = "Mango managed by UWSM";
-                    binPath = "/run/current-system/sw/bin/mango";
+                    binPath = "/etc/profiles/per-user/che/bin/mango";
                 };
             };
         };
