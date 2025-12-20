@@ -2,9 +2,7 @@
 
 {
     environment.systemPackages = with pkgs; [
-        (lib.hiPrio pkgs.uutils-coreutils-noprefix)
-        brightnessctl
-        neovim
+        (lib.hiPrio uutils-coreutils-noprefix)
     ];
 
     fonts.packages = with pkgs; [

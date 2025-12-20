@@ -4,6 +4,7 @@
     home.packages = with pkgs; [
         aria2
         bat
+        brightnessctl
         discord
         dos2unix
         eza

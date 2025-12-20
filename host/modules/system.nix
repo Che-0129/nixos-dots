@@ -16,11 +16,13 @@
     zramSwap = {
         enable = true;
         memoryPercent = 50;
+        priority = 100;
     };
 
     swapDevices = [{
         device = "/swapfile";
         size = 4096;
+        priority = 10;
     }];
 
     networking = {
