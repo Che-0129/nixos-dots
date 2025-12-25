@@ -13,6 +13,8 @@
     i18n.defaultLocale = "ja_JP.UTF-8";
     console.keyMap = "jp106";
 
+    environment.sessionVariables.NIXOS_OZONE_WL = "1";
+
     users = {
         mutableUsers = false;
         users.che = {

@@ -2,6 +2,7 @@
 
 {
     imports = [
+        ./modules/discord.nix
         ./modules/firefox.nix
         ./modules/fish.nix
         ./modules/foot.nix
