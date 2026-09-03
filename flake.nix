@@ -5,9 +5,16 @@
             inputs.nixpkgs.follows = "nixpkgs";
             url = "github:nix-community/home-manager";
         };
-        hyprtoolkit.url = "github:hyprwm/hyprtoolkit";
+        hyprutils.url = "github:hyprwm/hyprutils";
+        hyprtoolkit = {
+            inputs.hyprutils.follows = "hyprutils";
+            url = "github:hyprwm/hyprtoolkit";
+        };
         hyprlauncher = {
-            inputs.hyprtoolkit.follows = "hyprtoolkit";
+            inputs = {
+                hyprutils.follows = "hyprutils";
+                hyprtoolkit.follows = "hyprtoolkit";
+            };
             url = "github:hyprwm/hyprlauncher";
         };
         nixvim = {
