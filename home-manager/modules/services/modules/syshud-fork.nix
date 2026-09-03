@@ -14,13 +14,13 @@
 
 stdenv.mkDerivation (finalAttrs: {
   pname = "syshud";
-  version = "0-unstable-2026-09-02";
+  version = "0-unstable-2026-09-07";
 
   src = fetchFromGitHub {
     owner = "Che-0129";
     repo = "syshud";
-    rev = "63b74166578d8b9d61ecfb0880878e81d9fe2545";
-    hash = "sha256-SlX8qKsBr+azsEgLxj3BAv3UV2H0Ww0BQFQNyAoLzGw=";
+    rev = "ef3fb52ea37f57170a5e91b266ed9a449de9d2e9";
+    hash = "sha256-tTY4DP9F3Mi5fylnaAPsipnOhMj/9MBbg4/+qZ+AGFo=";
   };
 
   postPatch = ''
