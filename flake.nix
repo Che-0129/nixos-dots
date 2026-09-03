@@ -14,6 +14,7 @@
             inputs.nixpkgs.follows = "nixpkgs";
             url = "github:nix-community/nixvim";
         };
+        llm-agents.url = "github:numtide/llm-agents.nix";
         disko = {
             inputs.nixpkgs.follows = "nixpkgs";
             url = "github:nix-community/disko";
