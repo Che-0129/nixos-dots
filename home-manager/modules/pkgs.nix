@@ -1,4 +1,4 @@
-{ inputs, pkgs, ... }: {
+{ pkgs, ... }: {
     home.packages = with pkgs; [
         android-tools
         aria2
@@ -15,7 +15,6 @@
         payload-dumper-go
         picotool
         qmk
-        inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}.qwen-code
         slurp
         telegram-desktop
         trash-cli
