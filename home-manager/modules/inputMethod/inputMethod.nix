@@ -9,8 +9,14 @@
             settings = {
                 globalOptions = {
                     Hotkey.TriggerKeys = "";
-                    "Hotkey/ActivateKeys"."0" = "Hangul";
-                    "Hotkey/DeactivateKeys"."0" = "Hangul_Hanja";
+                    "Hotkey/ActivateKeys" = {
+                        "0" = "Hangul";
+                        "1" = "Henkan";
+                    };
+                    "Hotkey/DeactivateKeys" = {
+                        "0" = "Hangul_Hanja";
+                        "1" = "Muhenkan";
+                    };
                 };
                 addons.classicui.globalSection = {
                     Font = "Noto Sans CJK JP 10";
