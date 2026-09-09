@@ -113,6 +113,11 @@
                     jsonls.enable = true;
                     nixd.enable = true;
                     pyright.enable = true;
+                    rust_analyzer = {
+                        enable = true;
+                        installCargo = true;
+                        installRustc = true;
+                    };
                 };
             };
             lualine.enable = true;
@@ -129,6 +134,7 @@
                     lua
                     nix
                     python
+                    rust
                 ];
                 highlight.enable = true;
                 indent.enable = true;
