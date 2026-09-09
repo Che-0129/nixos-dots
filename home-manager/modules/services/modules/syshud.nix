@@ -1,7 +1,6 @@
-{ pkgs, ... }: {
+{
     services.syshud = {
         enable = true;
-        package = pkgs.callPackage ./syshud-fork.nix {};
         settings = {
             position = "top";
             timeout = 1;
