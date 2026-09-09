@@ -87,7 +87,22 @@
                 };
             };
             blink-indent.enable = true;
-            blink-pairs.enable = true;
+            blink-pairs = {
+                enable = true;
+                settings.mappings.pairs.__raw = ''
+                    {
+                        ["{"] = {
+                            {
+                                "}",
+                                open = function(ctx)
+                                    local char_after = ctx.line:sub(ctx.cursor.col + 1, ctx.cursor.col + 1)
+                                    return char_after == ""
+                                end,
+                            },
+                        },
+                    }
+                '';
+            };
             colorizer.enable = true;
             lsp = {
                 enable = true;
